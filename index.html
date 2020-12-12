@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalori</title>
+
+    <!-- bootsrap core css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar-top-fixed.css">
+    <!-- plugin css -->
+    <!-- theme css -->
+
+</head>
+<body>
+    
+        <nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">Fuzzy Mamdani</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="page-scroll" href="#home">Home <span></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="page-scroll" href="#prediksi">Prediksi Kalori</a>
+              </li>
+            </ul>
+           
+          </div>
+        </nav>
+   
+      <header id="home">
+      <main role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="first-slide" src="assets/img/1.jpg" alt="First slide">
+                <div class="container">
+                  <div class="carousel-caption text-left">
+                    <h1>Kalori</h1>
+                    <p>Merupakan takaran energi dalam makanan. Kunci berat badan sehat adalah mengetahui berapa kandungan kalori dalam makanan yang Anda konsumsi sehingga dapat disesuaikan dengan jumlah energi yang dibakar oleh tubuh.</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="second-slide" src="assets/img/2.jpg" alt="Second slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Kebutuhan</h1>
+                    <p>Tubuh membutuhkan energi dari kalori dalam makanan untuk dapat beraktivitas. Umumnya rata-rata wanita membutuhkan sekitar 1.600-2.400 kilokalori (kkal) per hari, sementara rata-rata pria memerlukan 2.000-3000 kkal.</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="third-slide" width="800px" height="400px" src="assets/img/3.jpg" alt="Third slide">
+                <div class="container">
+                  <div class="carousel-caption text-right">
+                    <h1>Kondisi</h1>
+                    <p>Berat badan Anda adalah hasil  dari menyeimbangkan jumlah kalori. Artinya, jika Anda mengonsumsi lebih banyak kalori daripada yang Anda bakar, maka berat badan Anda akan bertambah.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </main>
+    </header>
+    <section id="prediksi">
+            <div class="container">
+                <div class="row" style="margin-bottom: 30px">
+                    <div class="col-lg-12 text-center">
+                        <br><br><br><br>
+                        <h2 class="section-heading">Prediksi Kalori</h2>
+                        <hr class="primary">
+                       
+                    </div>
+    
+                    <div class="col-lg-6 col-md-4 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                            <h3>IMT (Indeks Massa Tubuh)</h3>
+                            <img src="assets/img/imt.png" width="400px" height="150px" class="img-responsive">
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 text-center">
+                        <div class="service-box">
+                            <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                            <h3>Umur</h3>
+                            <img src="assets/img/umur.png" width="400px" height="150px" class="img-responsive">
+                            <p class="text-muted"></p>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group row">
+                        <label for="input" class="col-sm-2 col-form-label">Usia</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Masukkan Usia Anda">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="input" class="col-sm-2 col-form-label">Tinggi Badan</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputPassword3" placeholder="Masukkan Tinggi Badan Anda">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="input" class="col-sm-2 col-form-label">Berat Badan</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputPassword3" placeholder="Masukkan Berat Badan Anda">
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Jenis Kelamin</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Laki-laki
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Perempuan
+                                    </label>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Hitung</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">CopyRight@2020 Logika Fuzzy Penghitung Kalori Harian</span>
+            </div>
+        </footer>
+
+        
+
+    
+      <script src="js/holder.min.js"></script>
+      <script src="js/jquery-3.3.1.min.js"></script>
+
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
