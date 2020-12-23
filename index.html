@@ -109,38 +109,40 @@
                         </div>
                     </div>
                 </div>
-                <form>
+                <fieldset>
+                
                     <div class="form-group row">
-                        <label for="input" class="col-sm-2 col-form-label">Usia</label>
+                        <label for="input" class="col-sm-2 col-form-label">Umur</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="Masukkan Usia Anda">
+                            <input type="text" id="umur" name="umur" type="number" class="form-control" placeholder="Masukkan Usia Anda (Tahun)">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="input" class="col-sm-2 col-form-label">Tinggi Badan</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="inputPassword3" placeholder="Masukkan Tinggi Badan Anda">
+                            <input type="number" class="form-control" name="tinggiBadan" type="number" id="tinggiBadan" placeholder="Masukkan Tinggi Badan Anda (Cm)">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="input" class="col-sm-2 col-form-label">Berat Badan</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="inputPassword3" placeholder="Masukkan Berat Badan Anda">
+                            <input type="number" id="beratBadan" name="beratBadan" type="number" class="form-control"  placeholder="Masukkan Berat Badan Anda (Kg)">
                         </div>
                     </div>
                     <fieldset class="form-group">
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0">Jenis Kelamin</legend>
+                            <!-- <label class="col-md-4 control-label text-right" for="jenisKelamin">Jenis Kelamin</label> -->
                             <div class="col-sm-10">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="gridRadios1">
+                                    <input class="jenisKelamin" class="form-check-input"  type="radio" name="jenisKelamin" id="lk" value="lk" >
+                                    <label class="form-check-label">
                                     Laki-laki
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
+                                    <input class="jenisKelamin" class="form-check-input" class="jenisKelamin" type="radio" name="jenisKelamin" id="pr" value="pr" >
+                                    <label class="form-check-label">
                                     Perempuan
                                     </label>
                                 </div>
@@ -150,19 +152,31 @@
                     </fieldset>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Hitung</button>
+                          <button type="submit" id="proses" class="btn btn-primary">Hitung</button>
                         </div>
                     </div>
-                </form>
+                    <div class="col-lg-6 text-center">
+                      <h3 style="display: inline">Hasil Prediksi</h3>
+                      <input type="text" name="hasil" id="hasil" class="hasil" style=" border:none" />
+                    </div>
+    
+                    <div>
+                      <table id="z-result" style="align: center">
+    
+                      </table>
+                    </div>
+                
+                
+              </fieldset>
             </div>
         </section>
 <!-- end prediksi -->
 <!-- footer -->
-        <footer class="footer ">
+        <!-- <footer class="footer ">
             <div class="container">
                 <span class="text-muted">CopyRight@2020 Logika Fuzzy Penghitung Kalori Harian</span>
             </div>
-        </footer>
+        </footer> -->
 <!-- end footer -->
 <!-- jquery responsive -->
       <script src="js/jquery-3.5.1.min.js"></script>
@@ -172,6 +186,8 @@
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- my script js -->
       <script src="js/myscript.js"></script>
+<!-- fuzzy js -->
+      <script src="js/mamadani.js"></script>
 
 </body>
 </html>
